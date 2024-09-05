@@ -1,6 +1,7 @@
 package com.app.controlador;
 
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -24,6 +25,10 @@ public class Controller extends HttpServlet {
 		super();
 
 	}
+	
+	public void init(ServletConfig config) throws ServletException {
+		sc = config.getServletContext(); 
+	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -42,10 +47,12 @@ public class Controller extends HttpServlet {
 			
 			dispatcher.forward(request, response);
 
-		} else if (request.getServletPath().equals("/consulta.go")) {
+		} else if (request.getServletPath().equals("/signup.go")) {
 
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
+			RequestDispatcher dispatcher = 
+					sc.getRequestDispatcher("/SignUp");
+				
+				dispatcher.forward(request, response);
 		}
 	
 	}

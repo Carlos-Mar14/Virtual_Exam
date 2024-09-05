@@ -47,7 +47,7 @@
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <button onclick="closePopup()" id="popup_close">X</button>
         <h2 class="popup_title">SIGN UP</h2>
-        <form action="signin.go">
+        <form action="signup.go" method="post">
         <input type="text" name="username" required="required" placeholder="Username">
         <input type="email" name="email" required="required" placeholder="Email">
         <input type="password" name="password" required="required" placeholder="Password">
@@ -67,7 +67,7 @@
         <button onclick="closePopup()" id="popup_close">X</button>
         <h2 class="popup_title">ERROR DE LOGIN</h2>
         <p style="color: red;">Usuario o contraseña incorrectos. Inténtalo de nuevo.</p>
-        <form action="signin.go">
+        <form action="signin.go" method="post"> 
             <input type="text" name="username" required="required" placeholder="Username">
             <input type="email" name="email" required="required" placeholder="Email">
             <input type="password" name="password" required="required" placeholder="Password">
