@@ -38,7 +38,7 @@ public class Controller extends HttpServlet {
 		String accion = request.getParameter("accion");
 		switch (accion) {
 		case "Principal":
-			List<Exam> listExamens = eDao.getExams();
+			List<Exam> listExamens = eDao.getAllExams();
 			request.setAttribute("Examenes", listExamens);
 			request.getRequestDispatcher("Principal.jsp").forward(request, response);
 			break;
