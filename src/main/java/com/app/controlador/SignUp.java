@@ -38,9 +38,9 @@ public class SignUp extends HttpServlet {
 			HttpSession session = request.getSession();
 			int userId = usersDao.getUserId(username);
 			session.setAttribute("userId", userId);
-			response.sendRedirect("home"); 
+			response.sendRedirect("profile.jsp"); 
 		}else {
-			System.out.println("Error al crear usuario");
+			 response.sendRedirect("index.jsp?loginError=true");
 		}
 	}
 
