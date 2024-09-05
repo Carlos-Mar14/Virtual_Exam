@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Pagina Login</h1>
-	<h2>login</h2>
-	<h3>login</h3>
-	<h4>login</h4>
+<h1>SingUp</h1>
+<h2> Regstrt</h2>
+<h3>regstrii</h3>
 </body>
 </html>
