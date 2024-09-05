@@ -8,5 +8,7 @@
 </head>
 <body>
 <h1>SingUp</h1>
+<h2> Regstrt</h2>
+<h3>regstrii</h3>
 </body>
 </html>
