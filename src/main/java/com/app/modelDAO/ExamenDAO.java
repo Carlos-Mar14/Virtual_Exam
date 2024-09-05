@@ -13,7 +13,7 @@ import com.app.model.Exam;
 public class ExamenDAO implements ExamInterface {
 
 	@Override
-	public List<Exam> getExams() {
+	public List<Exam> getAllExams() {
 		String sql = "SELECT * FROM Examen";
 		List<Exam> listaExamenes = new ArrayList<Exam>();
 
@@ -51,22 +51,33 @@ public class ExamenDAO implements ExamInterface {
 //		return nombreExamen;
 //	}
 
+	
 	@Override
-	public Exam getExamen(int idExamen) {
-		
-		return null;
-	}
-
-	@Override
-	public int save(Exam examen) {
+	public int saveExam(Exam examen) {
 	
 		return 0;
 	}
 
-	@Override
-	public void delete(int idExamen) {
-		
+	
 
+	@Override
+	public Exam getExamById(int examId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	@Override
+	public boolean updateExam(Exam exam) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteExam(int examId) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
