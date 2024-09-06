@@ -1,3 +1,12 @@
 Cambiar puerto para conexion con DB
 
 http://localhost:8080/Virtual_Exam/index.jsp
+
+
+Proyecto Practica3 - Descripción del Controlador y Uso del Patrón .go
+Este proyecto utiliza un controlador principal que actúa como el punto de entrada para manejar diversas solicitudes del usuario. La estructura de la aplicación está basada en el uso de servlets y la configuración en el archivo web.xml establece un patrón de URL que permite una fácil redirección y gestión de las rutas de la aplicación.
+Controlador PrincipalUso del Patrón .go en las URL
+En este proyecto, todas las solicitudes que terminan en .go son manejadas por el Controlador principal. Esto se configura en el archivo web.xml¿Por qué usamos *.go?
+El patrón *.go es una convención que permite que todas las URL que terminan en .go sean manejadas por un único servlet (el Controlador principal). Esto permite una gestión centralizada de las acciones realizadas en la aplicación. En lugar de tener diferentes servlets para cada formulario o acción, el controlador principal puede procesar la solicitud y redirigirla a otros servlets según la lógica de la aplicación.
+Flujo de Trabajo con el Controlador
+Cuando un formulario en la aplicación se envía, por ejemplo, a login.go, el servlet principal (Controlador) recibe la solicitud y, con base en el parámetro de acción proporcionado en el formulario, redirige al servlet o página correspondiente.
